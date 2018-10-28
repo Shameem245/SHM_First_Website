@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <div class="navbar-fixed">
+        <nav class="white">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="./" class="brand-logo">
+              <image class="responsive-image" src="images/shm_logo.png"></image>
+            </a>
+            <a href="#!" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons black">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="sass.html" class="black-text">Home</a>
+              </li>
+              <li>
+                <a href="badges.html" class="black-text">Porfolio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+      <li>
+        <a href="sass.html" class="black-text">Home</a>
+      </li>
+      <li>
+        <a href="badges.html" class="black-text">Porfolio</a>
+      </li>
+    </ul>
+    <!-- <section>
+      slider
+    </section>-->
+    <div class="carousel carousel-slider" id="demo-carousel-auto" data-indicators="true">
+      <a class="carousel-item" href="#one!"><img src="images/2.jpg"></a>
+      <a class="carousel-item" href="#two!"><img src="images/4.png"></a>
+      <a class="carousel-item" href="#three!"><img src="images/home.jpg"></a>
+      <a class="carousel-item" href="#four!"><img src="images/3d_animation.png"></a>
+    </div>
+
+        <section class="section section-icons grey lighten-3 center">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="card-panel">
+                <i class="material-icons large black-text">adb</i>
+                <h4>Logo <br>Design </br></h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, tempore?</p>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="card-panel">
+                <i class="material-icons large black-text">3d_rotation</i>
+                <h4>3D <br>Modelling</br></h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, tempore?'</p>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="card-panel">
+                <i class="material-icons large black-text">home</i>
+                <h4>Architectural Rendering</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, tempore?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+        //<sidenav></sidenav>
+        const sidenav = document.querySelector('.sidenav');
+        M.Sidenav.init(sidenav,{});
+      </script>
+      <script type="text/javascript" language="javascript">
+          $(document).ready(function(){
+             $('#demo-carousel-auto').carousel();
+              setInterval(function() {
+                $('#demo-carousel-auto').carousel('next');
+              }, 3000);
+          });
+        </script>
+
+        <style>
+          .carousel {
+          min-height: 900px;
+          }
+        </style>
+    </body>
+  </html>
